@@ -1,0 +1,18 @@
+server:
+    port: 8080
+system:
+    storePath: /home/ubuntu/upload
+
+spring:
+    mvc:
+      view:
+        prefix: /WEB-INF/views/
+        suffix: .jsp
+    http: 
+        multipart:
+                enabled: true
+                location: /home/ubuntu/upload
+                max-file-size: 10mb
+                max-request-size: 10mb
+                
+        
